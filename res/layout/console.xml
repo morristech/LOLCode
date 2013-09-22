@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    >
+    <LinearLayout
+       android:id="@+id/upperLayout"
+       android:orientation="horizontal"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+
+    </LinearLayout>
+
+    <net.linxdroid.lolcode.console.gui.ConsoleScrollView
+        android:id="@+id/consoleScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputOKButton"
+        android:layout_alignParentTop="true" >
+
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/verticalLayout"
+          android:orientation="vertical"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content">
+       </LinearLayout>
+    </net.linxdroid.lolcode.console.gui.ConsoleScrollView>
+
+    <Button
+        android:id="@+id/inputOKButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Enter"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/inputBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/inputOKButton"
+        android:layout_alignBottom="@+id/inputOKButton"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/inputOKButton"
+        android:background="@android:drawable/editbox_background_normal"
+        android:ems="10"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>
